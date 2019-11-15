@@ -1,7 +1,20 @@
-<header>
-    <a href="{% url 'home' %}">Página Inicial</a> |
-    <a href="{% url 'sobre' %}">Sobre</a>
-</header>
+{% load static %}
+<html>
+    <head><title>Postagens</title>
+    <link rel="stylesheet" href="C:\Users\2017118050260\Documents\Django\projetos\paginas\static\css\base.css">
+    </head>
+    <body>
+        <header>
+            <a href="{% url 'home' %}">Home</a>
+            <a href ="{% url 'listagem' %}">Postagem</a>
+            <a href ="{% url 'post_new' %}">New Post</a>
+            <a href ="{% url 'sobre' %}">Sobre</a>
 
-{% block content %}
-{% endblock content %}
+        </header>
+
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </body>
+</html>

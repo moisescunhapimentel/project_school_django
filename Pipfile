@@ -5,10 +5,12 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+autopep8 = "*"
 
 [packages]
-django = "==2.1"
+django = "==2.1.5"
 gunicorn = "==19.9.0"
+whitenoise = "==3.3.1"
 
 [requires]
 python_version = "3.7"
